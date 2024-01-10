@@ -1,7 +1,62 @@
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  background: radial-gradient(rgb(234, 231, 244),rgb(153, 141, 169));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 * {
   box-sizing: border-box;
 }
-
 html {
-  font-size: 10px;
+  font-size: 16px;
+}
+h1 {
+  text-align: center;
+}
+.grid {
+  display: grid;
+  width: 800px;
+  height: 400px;
+  border: 0.5rem solid black;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);  
+}
+.grid-items {
+  display: flex;
+  border: 0.1rem solid gray;
+  background-color: white;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+#box3, #box7, #box10, #box11, #box12, #box15 {
+  border-left: 0.5rem solid black;
+}
+#box1, #box2, #box3, #box4, #box5, #box8, #box9, #box10, #box11{
+  border-bottom: 0.5rem solid black;
+}
+.prompt {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  margin: 0.25rem;
+}
+.answer {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
+
+.special {
+  border: none;
+  font-size: 2rem;
+}
+@media only screen and (min-width: 475px) {
+  html {
+    font-size: 16px;
+  }
 }
